@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.8)
 
 project(health_manager LANGUAGES CXX)
 
-add_subdirectory(component_1)
+#add_subdirectory(component_1)
 add_subdirectory(component_2)
 
 
@@ -12,3 +12,7 @@ add_subdirectory(component_2)
 include_directories(${CMAKE_SOURCE_DIR}/component_1/inc)
 
 add_subdirectory(component_3)
+
+
+set(MY_CACHE_VAR ON CACHE BOOL "Description of the variable")
+option(MY_OPTION "On or off" OFF)

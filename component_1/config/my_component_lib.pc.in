@@ -1,0 +1,10 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+exec_prefix=${prefix}
+includedir=${prefix}/include/@COMPONENT_HEADER_DIR@
+libdir=${exec_prefix}/lib
+​
+Name: My component library 
+Description: My component library 
+Version: 1.0
+Cflags: -I${includedir}
+Libs: -L${libdir} -lmy_component_lib
